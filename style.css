@@ -1,8 +1,12 @@
-header{
+#header{
+    grid-template-columns: 1fr 1fr;
     display: grid ;
 justify-items: start;
 }
-section{
+#header>img{
+    width: 20vw;
+}
+#header>section{
     justify-self: end;
 
 }
@@ -11,7 +15,4 @@ section{
 }
 #end{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-img{
-    width: 50vw;
 }
