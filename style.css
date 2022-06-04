@@ -2,9 +2,11 @@
     grid-template-columns: 1fr 1fr;
     display: grid ;
 justify-items: start;
+min-height: 50px;
+background-color: dimgrey;
 }
 #header>img{
-    width: 20vw;
+    width: 100px;
 }
 #header>section{
     justify-self: end;
@@ -13,11 +15,15 @@ justify-items: start;
 #main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    min-height: calc(100vh - 100px);
+    background-color:orange;
 }
 #end{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    min-height: 100px;
+    background-color: dimgray;
 }
-p{ font-size: 4em;
+p{ font-size: 2em;
 
 }
