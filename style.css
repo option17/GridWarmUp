@@ -1,21 +1,26 @@
 #header{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     display: grid ;
 justify-items: start;
-min-height: 50px;
+min-height: 100px;
 background-color: dimgrey;
+
 }
 #header>img{
     width: 100px;
 }
-#header>section{
+#header>nav{
     justify-self: end;
+    font-size: 2em;
 
+}
+#header>a{
+    font-size: 50px;
 }
 #main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 200px);
     background-color:orange;
 }
 #end{
